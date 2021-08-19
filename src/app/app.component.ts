@@ -10,6 +10,6 @@ export class AppComponent implements OnInit {
   title = 'curriculum';
 
   ngOnInit(){
-    $("h1").html("Pruebas Jquery y Bootstrap 5");
+    
   }
 }

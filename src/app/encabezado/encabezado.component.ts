@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncabezadoComponent implements OnInit {
 
+  nombreCompleto = "Yeiko Muñoz Araya";
+  cargo = "Desarrollador web Front-End";
+  
   constructor() { }
 
   ngOnInit(): void {

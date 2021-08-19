@@ -1,0 +1,38 @@
+$colorFondo: #3893BE;
+
+.encabezado {
+  display: flex;
+  padding: 15px;
+  background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, rgba(0,255,235,1) 100%);
+
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+
+  .header-titulos {
+    margin-left: 30px;
+    align-self: center;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+.pdf{
+    text-align: right;
+}
