@@ -6,6 +6,12 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Angular material
+import {MatTabsModule} from '@angular/material/tabs';
+
+//servicios
+import { DatosService } from './datos.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
-  providers: [],
+  providers: [DatosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

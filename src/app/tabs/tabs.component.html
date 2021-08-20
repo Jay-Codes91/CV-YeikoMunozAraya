@@ -1,1 +1,32 @@
-<p>tabs works!</p>
+<mat-tab-group mat-align-tabs="center" class="mat-tab-group">
+    <mat-tab label="Perfil">
+        <div class="cont">
+            <h1>{{perfil}}</h1>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Preparación Académica" class="contenido">
+        <div class="cont2">
+            
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Habilidades y Experiencia" class="contenido">
+        <div class="cont3 container-fluid">
+            <div class="habilidades" *ngFor="let item of habilidades"><i class="{{item.icono}}"></i>{{item.nom}}</div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Aptitudes" class="contenido">
+        <div class="cont4">
+            
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Idiomas y disponibilidad" class="contenido">
+        <div class="cont5">
+            
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

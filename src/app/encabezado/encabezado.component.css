@@ -3,6 +3,9 @@
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
+  background: #020024;
+  background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(42%, #2d8bc3), to(#00ffeb));
+  background: linear-gradient(270deg, #020024 0%, #2d8bc3 42%, #00ffeb 100%);
 }
 
 .encabezado img {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from '../datos.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  constructor() { }
+  perfil: string = '';
+  habilidades: any[] = [];
+
+  constructor(private _serv: DatosService) {
+     this.perfil = this._serv.perfil;
+     this.habilidades = this._serv.obtenerHabilidades();
+   }
 
   ngOnInit(): void {
   }

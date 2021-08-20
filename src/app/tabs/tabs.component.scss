@@ -1,0 +1,32 @@
+$espacioContenido: 20px;
+
+.mat-tab-group{
+    width: 80%;
+    margin: auto;
+}
+.cont {
+  padding: $espacioContenido;
+
+}
+
+.cont3{
+  padding: $espacioContenido;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  .habilidades{
+    
+    //width: max-content;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+}
