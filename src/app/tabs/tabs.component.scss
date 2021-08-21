@@ -1,23 +1,22 @@
 $espacioContenido: 20px;
 
-.mat-tab-group{
-    width: 80%;
-    margin: auto;
-}
-.cont {
+
+.mat-tab-label{
+  font-size: 20px;
+} 
+
+.cont,
+.cont2,
+.cont3,
+.cont4,
+.cont5,
+.cont6 {
   padding: $espacioContenido;
 
 }
 
-.cont3{
-  padding: $espacioContenido;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  .habilidades{
-    
-    //width: max-content;
-    padding: 10px;
+@mixin badges {
+  padding: 10px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -27,6 +26,31 @@ $espacioContenido: 20px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    
+
+    &:hover {
+
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
 }
+
+.cont3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+  .habilidades {
+
+    @include badges;
+  }
 }
+
+.cont4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  .aptitudes{
+    @include badges();
+  }
+}
+

@@ -7,25 +7,32 @@
 
     <mat-tab label="Preparación Académica" class="contenido">
         <div class="cont2">
-            
+            <h1>{{titulos}}</h1>
         </div>
     </mat-tab>
 
     <mat-tab label="Habilidades y Experiencia" class="contenido">
         <div class="cont3 container-fluid">
-            <div class="habilidades" *ngFor="let item of habilidades"><i class="{{item.icono}}"></i>{{item.nom}}</div>
+            <div class="habilidades" *ngFor="let item of habilidades"><i class="{{item.icono}}"></i>&nbsp;&nbsp;{{item.nom}}</div>
         </div>
     </mat-tab>
 
     <mat-tab label="Aptitudes" class="contenido">
         <div class="cont4">
-            
+            <div class="aptitudes" *ngFor="let item of aptitudes">{{item}}</div>
         </div>
     </mat-tab>
 
     <mat-tab label="Idiomas y disponibilidad" class="contenido">
         <div class="cont5">
-            
+            <h1><b>Idiomas: </b>{{idiomas}}</h1>
+            <h1><b>Disponibilidad: </b>{{disponibilidad}}</h1>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Contacto" class="contenido">
+        <div class="cont6">
+            <h1 *ngFor="let item of contacto"><b>{{item.id}}</b> &nbsp;&nbsp; <i class="{{item.icono}}"></i> {{item.dato}}</h1>
         </div>
     </mat-tab>
 
