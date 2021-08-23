@@ -1,36 +1,46 @@
-<mat-tab-group mat-align-tabs="center" class="mat-tab-group">
+<mat-tab-group mat-align-tabs="center" class="mat-tab-group animate__animated animate__fadeInUpBig">
     <mat-tab label="Perfil">
+        <div class="titulo"><h1>Presentación</h1></div>
         <div class="cont">
             <h1>{{perfil}}</h1>
+            <br>
+            <h1>Adjunto una página web que he desarrollado y este curriculum web con el propósito de demostrar un poco de mis capacidades</h1>
+            <br>
+        <h1><b>Página web:</b> <a href="{{paginaWeb}}" target="_blank">{{paginaWeb}}</a></h1>
+        <h1><b>Proyecto en GitHub:</b> <a href="{{proyectoGitHub}}" target="_blank">{{proyectoGitHub}}</a></h1>
         </div>
     </mat-tab>
 
-    <mat-tab label="Preparación Académica" class="contenido">
+    <mat-tab label="Preparación Académica">
         <div class="cont2">
             <h1>{{titulos}}</h1>
         </div>
     </mat-tab>
 
-    <mat-tab label="Habilidades y Experiencia" class="contenido">
+    <mat-tab label="Habilidades y Experiencia">
+        <div class="titulo"><h1>Conocimientos en</h1></div>
         <div class="cont3 container-fluid">
             <div class="habilidades" *ngFor="let item of habilidades"><i class="{{item.icono}}"></i>&nbsp;&nbsp;{{item.nom}}</div>
         </div>
+
+        <div class="titulo"><h1>Experiencia</h1></div>
+        <h1 style="margin-left: 20px;">{{experiencia}}</h1>
     </mat-tab>
 
-    <mat-tab label="Aptitudes" class="contenido">
+    <mat-tab label="Aptitudes">
         <div class="cont4">
             <div class="aptitudes" *ngFor="let item of aptitudes">{{item}}</div>
         </div>
     </mat-tab>
 
-    <mat-tab label="Idiomas y disponibilidad" class="contenido">
+    <mat-tab label="Idiomas y disponibilidad">
         <div class="cont5">
             <h1><b>Idiomas: </b>{{idiomas}}</h1>
             <h1><b>Disponibilidad: </b>{{disponibilidad}}</h1>
         </div>
     </mat-tab>
 
-    <mat-tab label="Contacto" class="contenido">
+    <mat-tab label="Contacto">
         <div class="cont6">
             <h1 *ngFor="let item of contacto"><b>{{item.id}}</b> &nbsp;&nbsp; <i class="{{item.icono}}"></i> {{item.dato}}</h1>
         </div>
