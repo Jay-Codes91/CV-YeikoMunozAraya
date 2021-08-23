@@ -45,12 +45,12 @@ disponibilidad: string = 'Inmediata';
 contacto: any[] = [
   {icono: 'fas fa-phone-alt', dato: '8333-9005', id: 'Telefono:'},
   {icono: 'far fa-envelope', dato: 'yeimaraya91@gmail.com', id: 'Correo Electrónico:'},
-  {icono: 'fab fa-linkedin', dato: 'www.linkedin.com/in/yeikoMuñoz', id:'LinkedIn:'},
   {icono: 'fas fa-map-marker', dato: 'San josé, Desamparados, Loma linda', id: 'Residencia:'}
 ]
 
 proyectoGitHub: string = 'https://github.com/Jay-Codes91/zona-animal';
 paginaWeb: string = 'https://jay-codes91.github.io/zona-animal/';
+linkedIn: string = 'https://www.linkedin.com/in/yeikoMuñoz';
 
 obtenerHabilidades(){
   return this.habilidades;

@@ -1,11 +1,19 @@
 $colorFondo: #3893BE;
+$colorRGBFull: rgb(2,0,36);
+$colorRadientFull: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, rgba(0,255,235,1) 100%);
+$colorRadientDispo: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, rgba(0,255,235,1) 100%);
 
 .encabezado {
   display: flex;
   padding: 15px;
-  background: rgb(2,0,36);
-background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, rgba(0,255,235,1) 100%);
-
+  background: $colorRGBFull;
+  background: $colorRadientFull;
+  @media screen and (max-width: 480px){
+    background: $colorRadientDispo;
+ }
+ @media screen and (min-width: 481px) and (max-width: 768px){
+  background: $colorRadientDispo;
+}
 
   img {
     width: 200px;
@@ -16,6 +24,11 @@ background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, r
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 480px){
+      width: 150px;
+      height: 150px;
+   }
   }
 
 
@@ -30,12 +43,18 @@ background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(45,139,195,1) 42%, r
     h2 {
       font-size: 20px;
     }
+
+    @media screen and (max-width: 480px){
+      h1{font-size: 25px;}
+      h2{font-size: 15px;}
+   }
+   @media screen and (min-width: 481px) and (max-width: 768px){
+    h1{font-size: 30px;}
+    h2{font-size: 20px;}
+ }
+   
   }
 }
 
-.pdf{
-   
-    a{
-      
-    }
-}
+
+

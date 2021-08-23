@@ -2,6 +2,15 @@
   font-size: 20px;
 }
 
+.titulo {
+  padding: 20px 0px 0px 20px;
+}
+
+.titulo h1 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .cont,
 .cont2,
 .cont3,
@@ -19,7 +28,30 @@
   gap: 5px;
 }
 
+@media screen and (max-width: 480px) {
+  .cont3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cont3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cont3 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .cont3 .habilidades {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   padding: 10px;
   font-size: 20px;
   display: -webkit-box;
@@ -37,8 +69,13 @@
 }
 
 .cont3 .habilidades:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: white;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .cont4 {
@@ -49,7 +86,30 @@
   gap: 5px;
 }
 
+@media screen and (max-width: 480px) {
+  .cont4 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cont4 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cont4 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .cont4 .aptitudes {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   padding: 10px;
   font-size: 20px;
   display: -webkit-box;
@@ -67,7 +127,18 @@
 }
 
 .cont4 .aptitudes:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: white;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+  .cont6 h1 {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=tabs.component.css.map */

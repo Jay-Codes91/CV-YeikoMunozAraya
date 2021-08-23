@@ -19,6 +19,7 @@ export class TabsComponent implements OnInit {
   contacto: any[];
   proyectoGitHub: string = '';
   paginaWeb: string = '';
+  linkedIn: string = '';
 
   constructor(private _serv: DatosService) {
      this.perfil = this._serv.perfil;
@@ -31,6 +32,7 @@ export class TabsComponent implements OnInit {
      this.paginaWeb = this._serv.paginaWeb;
      this.aptitudes = this._serv.obtenerAptitudes();
      this.contacto = this._serv.obtenerContacto();
+     this.linkedIn = this._serv.linkedIn;
    }
 
   ngOnInit(): void {
