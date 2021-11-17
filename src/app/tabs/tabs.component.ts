@@ -10,6 +10,7 @@ import { DatosService } from '../datos.service';
 export class TabsComponent implements OnInit {
 
   perfil: string = '';
+  areas: string = '';
   habilidades: any[] = [];
   titulos: string = '';
   experiencia: string = '';
@@ -23,6 +24,7 @@ export class TabsComponent implements OnInit {
 
   constructor(private _serv: DatosService) {
      this.perfil = this._serv.perfil;
+     this.areas = this._serv.areas;
      this.habilidades = this._serv.obtenerHabilidades();
      this.titulos = this._serv.titulos;
      this.experiencia = this._serv.experiencia;
